@@ -13,6 +13,12 @@ module.exports = {
                 path: `${__dirname}/static/images`,
             },
         },
+        {
+          resolve: `gatsby-plugin-s3`,
+          options: {
+            bucketName: "risk-aversion-landing-page",
+          },
+        },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         {
